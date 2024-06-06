@@ -32,6 +32,7 @@
     "ignore-dist": "git update-index --assume-unchanged dist/*"
   },
   "pre-commit": [
+    "test-2",
     "ts.check",
     "build",
     "add-all"
