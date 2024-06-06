@@ -25,18 +25,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
-    "add-all": "git add .",
+    "add-all": "git add dist",
     "remove-dist": "git reset dist",
     "start": "node ./dist/server.js",
     "ignore-dist": "git update-index --assume-unchanged dist/*"
   },
-  // "pre-commit": [
-  //   "ts.check",
-  //   "build",
-  //   "ignore-dist",
-  //   "add-all",
-  //   "remove-dist"
-  // ],
+  "pre-commit": [
+    "ts.check",
+    "build",
+    "add-all"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
