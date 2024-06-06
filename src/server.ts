@@ -9,7 +9,7 @@ configExpress(app);
 // initDatebase();
 
 app.get("/", (req, res) => {
-  res.send("Hello World new 0");
+  res.send("Hello World new 00");
 });
 
 app.listen(process.env.PORT || 3000, () => {
