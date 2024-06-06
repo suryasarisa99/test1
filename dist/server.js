@@ -11,7 +11,7 @@ const app = (0, express_1.default)();
 (0, config_1.default)(app);
 // initDatebase();
 app.get("/", (req, res) => {
-    res.send("Hello World new 2");
+    res.send("Hello World new 000");
 });
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running on port 3000");
